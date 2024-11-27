@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body style="background-color:#28b877;">
+<h2 style="color:black;text-Align:center;">Login</h2>
+<br><br><br><br><br>
+<form style="background-color:#E34F42;width:300px;height:300px;margin:auto;"  th:action="@{/login}" method="post"><br><br>
+    <label style="color:white;margin-left:20px;" for="username">Username:</label>
+    <input style="height:30px;width:160px;"  type="text" id="username" name="username" required>
+    <br><br><br>
+    <label style="color:white;margin-left:20px;" for="password">Password:</label>
+    <input style="height:30px;width:160px;"  type="password" id="password" name="password" required>
+    <br> <br> <br>
+    <button style="margin-left:115px;width:80px;height:50px;" type="submit">Login</button>
+</form >
+</body>
+</html>
